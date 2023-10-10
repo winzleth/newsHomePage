@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Overpass:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
+
 /* ===== Reset ===== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -19,6 +21,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 ul, ol {list-style:none;}
+a {
+	text-decoration: none;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -26,9 +31,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body{
-  background: hsl(210, 46%, 95%);
+  background: hsl(36, 100%, 99%);
   font-size: 10px;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 img {
   width: 100%;
@@ -40,6 +45,108 @@ img {
 	.pcOnly {display: none;}
 }
 
+.Off-white {
+	color: hsl(36, 100%, 99%);
+}
+.GrayishBlue{
+	color: hsl(233, 8%, 79%);
+}
+.DarkGrayishBlue{
+	color: hsl(236, 13%, 42%);
+}
+.VeryDarkBlue{
+	color: hsl(240, 100%, 5%);
+}
+.SoftOrange {
+	color: hsl(35, 77%, 62%);
+}
+.SoftRed {
+	color: hsl(5, 85%, 63%);
+}
+
+/* ====== content ====== */
+.contentWrap {
+	box-sizing: border-box;
+	padding: 0 10px;
+	width: 100%;
+	max-width: 1130px;
+	margin: auto;
+	font-size: 1.5em;
+}
+
+/* ====== header ====== */
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 6.8% 0 4.5%;
+}
+
+.headerNav {
+	width: 100%;
+	max-width: 440px;
+	margin-top: 10px;
+}
+
+.navList {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 4px 0 3px;
+}
+
+.navList li a {
+	color: hsl(236, 13%, 42%);
+}
+
+/* ====== main ====== */
+.mainBlock01 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.leftColumn {
+	width: 65.8%;
+}
+
+.leftColumn .txtBlock {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 31px;
+}
+
+.mainTtl h2 {
+	font-size: 3.8em;
+	color: hsl(240, 100%, 5%);
+	font-weight: 800;
+	line-height: 1;
+	padding-top: 3px;
+}
+
+.mainTtl, .mainTxt {
+	width: 50%;
+}
+
+.mainTxt {
+	margin-left: 31px;
+	line-height: 1.6;
+}
+
+.mainAnchor {
+	margin-top: 36px;
+}
+
+.mainAnchor a {
+	width: 185px;
+    background: hsl(5, 85%, 63%);
+    display: block;
+    padding: 12px 0;
+    letter-spacing: 4px;
+    text-align: center;
+	color: hsl(36, 100%, 99%);
+}
+
+.rightColumn {
+	width: 31.3%;
+}
 
 /* ====== footer ====== */
 .attribution { font-size: 11px; text-align: center; }
