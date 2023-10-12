@@ -3,36 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | News homepage</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <div class="contentWrap">
 
       <header>
-        <h1 class="logo"><img src="images/logo.svg" alt="Web 3.0"></h1>
-        <nav class="headerNav">
-          <ul class="navList">
-            <li class="navItem"><a href="#">Home</a></li>
-            <li class="navItem"><a href="#">New</a></li>
-            <li class="navItem"><a href="#">Popular</a></li>
-            <li class="navItem"><a href="#">Trending</a></li>
-            <li class="navItem"><a href="#">Categories</a></li>
-          </ul>
-        </nav>
+        <div class="headerWrap"> 
+          <h1 class="logo"><img src="images/logo.svg" alt="Web 3.0"></h1>
+          <div class="navWrap">
+            <div class="hamburger spOnly">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+            <nav id="navToggle" class="headerNav pcOnly">
+              <ul class="navList">
+                <li class="navItem"><a href="#">Home</a></li>
+                <li class="navItem"><a href="#">New</a></li>
+                <li class="navItem"><a href="#">Popular</a></li>
+                <li class="navItem"><a href="#">Trending</a></li>
+                <li class="navItem"><a href="#">Categories</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </header>
     
       <main>
         <section>
           <div class="mainBlock01">
+
             <div class="leftColumn">
               <figure>
                 <img class="pcOnly" src="images/image-web-3-desktop.jpg" alt="">
                 <img class="spOnly" src="images/image-web-3-mobile.jpg" alt="">
               </figure>
               <div class="txtBlock">
-                <div class="mainTtl"><h2>The Bright Future of Web 3.0?</h2></div>
+                <div class="mainTtl"><h2>The Bright<br class="spOnly"> Future of Web 3.0?</h2></div>
                 <div class="mainTxt">
                   <p class="mainDesc">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
                     But is it really fulfilling its promise?</p>
@@ -40,6 +50,7 @@
                 </div>
               </div>
             </div>
+
             <aside class="rightColumn">
               <h3 class="asideTtl">New</h3>
               <section>
@@ -55,22 +66,31 @@
                 <p class="asideTxt">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
               </section>
             </aside>
-          </div>
+          </div><!-- mainBlock01 -->
+          
           <ol class="pageList">
             <li class="pageItem">
               <figure class="listImg"><img src="images/image-retro-pcs.jpg" alt=""></figure>
-              <h3 class="listTtl"><span>01</span><a href="#">Reviving Retro PCs</a></h3>
-              <p class="listTtx">What happens when old PCs are given modern upgrades?</p>
+              <div class="txtBlock">
+                <h3 class="listTtl"><span>01</span><a href="#">Reviving Retro PCs</a></h3>
+                <p class="listTtx">What happens when old PCs are given modern upgrades?</p>
+              </div>
             </li>
+
             <li class="pageItem">
               <figure class="listImg"><img src="images/image-top-laptops.jpg" alt=""></figure>
-              <h3 class="listTtl"><span>02</span><a href="#">Top 10 Laptops of 2022</a></h3>
-              <p class="listTtx">Our best picks for various needs and budgets.</p>
+              <div class="txtBlock">
+                <h3 class="listTtl"><span>02</span><a href="#">Top 10 Laptops of 2022</a></h3>
+                <p class="listTtx">Our best picks for various needs and budgets.</p>
+              </div>
             </li>
+            
             <li class="pageItem">
               <figure class="listImg"><img src="images/image-gaming-growth.jpg" alt=""></figure>
-              <h3 class="listTtl"><span>03</span><a href="#">The Growth of Gaming</a></h3>
-              <p class="listTtx">How the pandemic has sparked fresh opportunities.</p>
+              <div class="txtBlock">
+                <h3 class="listTtl"><span>03</span><a href="#">The Growth of Gaming</a></h3>
+                <p class="listTtx">How the pandemic has sparked fresh opportunities.</p>
+              </div>
             </li>
           </ol>
         </section>
@@ -84,5 +104,6 @@
       </footer>
 
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
