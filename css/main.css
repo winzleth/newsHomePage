@@ -275,13 +275,15 @@ footer {margin: 50px 0;}
 	}
 	.navWrap.navBg {
 		background: rgba(0, 0, 0, 0.5);
+		max-width: 100%;
 	}
 	.hamburger {
 		float: right;
-    width: 63.8%;
+    width: 68%;
 		margin: 0;
 		padding: 30px 16px 0 0;
 		transition: opacity .3s;
+		box-sizing: border-box;
 		
 	}
 
